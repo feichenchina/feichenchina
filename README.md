@@ -5,7 +5,7 @@
 
 <div align="center">
    <span>  </span>
-   <img height="160px" src="https://github-readme-stats.vercel.app/api?username=feichenchina" />
+   <img style="background-color:black" height="160px" src="https://github-readme-stats.vercel.app/api?username=feichenchina" />
    <span>  </span>
    <img height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=8" />
    <span>  </span>
