@@ -3,9 +3,9 @@
 +%E7%A5%9D%E4%BD%A0%E4%BB%8A%E6%97%A5%E6%84%89%E5%BF%AB" alt="typing-svg">
 </p>
 
-<div align="center">
+<div align="center" style="background-color:black" >
    <span>  </span>
-   <img style="background-color:black" height="160px" src="https://github-readme-stats.vercel.app/api?username=feichenchina" />
+   <img height="160px" src="https://github-readme-stats.vercel.app/api?username=feichenchina" />
    <span>  </span>
    <img height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=8" />
    <span>  </span>
