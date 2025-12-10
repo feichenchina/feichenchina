@@ -1,16 +1,99 @@
+
+<!-- 个人 GitHub 首页 README（酷炫款 · 为 feichenchina 定制） -->
+
+![banner](https://capsule-render.vercel.app/api?type=waving&height=220&text=%F0%9F%94%A5%20Hello%20%26%20Welcome%20%F0%9F%9A%80&fontAlign=50&fontAlignY=40&color=gradient&animation=fadeIn)
+
 <p align="center">
-   <img src="https://readme-typing-svg.herokuapp.com?color=28696B&size=21&center=true&lines=%E9%97%AA%E9%97%AA%E5%8F%91%E4%BA%AE%EF%BC%8C%E9%97%AA%E9%97%AA%E5%8F%91%E4%BA%AE;feichenchina
-+%E7%A5%9D%E4%BD%A0%E4%BB%8A%E6%97%A5%E6%84%89%E5%BF%AB" alt="typing-svg">
+  <a href="https://github.com/feichenchina"> 
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=800&color=2AF7DC&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+feichenchina+%F0%9F%91%8B;Code%2C+Compute%2C+and+Creativity;Build+fast%2C+ship+reliable%2C+secure+by+design" alt="Typing SVG" />
+  </a>
 </p>
 
-<div align="center" style="background-color:black" >
-   <span>  </span>
-   <img height="160px" src="https://github-readme-stats.vercel.app/api?username=feichenchina" />
-   <span>  </span>
-   <img height="160px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=8" />
-   <span>  </span>
-</div>
+<p align="center">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=feichenchina.feichenchina" alt="visitors"/>
+  <img src="https://img.shields.io/github/followers/feichenchina?label=Follow&style=social" alt="followers"/>
+  <img src="https://img.shields.io/github/stars/feichenchina?label=Total%20Stars&style=social" alt="stars"/>
+</p>
 
-<div align="center">
-    <img  src="https://github-readme-streak-stats.herokuapp.com/?user=feichenchina" />
-</div>
+---
+
+## 🚀 关于我
+- 🧭 专注方向：高性能计算 / 云原生 / AI 工程 / 自动化工具
+- 🛠 常用语言：Python · Go · C/C++ · Rust
+- 🧪 兴趣点：交易自动化、工作流编排、推理服务与效率提升
+- 💬 联系方式：[Email](mailto:your-email@example.com)
+
+---
+
+## 🧰 技术栈 & 工具
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python,go,cpp,rust,js,ts,react,html,css" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=pytorch,opencv,sklearn" />
+  <br/>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,vscode,redis,postgres" />
+</p>
+
+---
+
+## 📊 GitHub 数据看板
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=feichenchina&show_icons=true&theme=radical&rank_icon=github" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=10&theme=radical" />
+  <br/>
+  <img height="170" src="https://streak-stats.demolab.com?user=feichenchina&theme=radical&date_format=%5BY.%5Dm.%5Dd" />
+</p>
+
+---
+
+## ⭐ 精选项目
+<p>
+[![daily_filling](https://github-readme-stats.vercel.app/api/pin/?username=feichenchina&repo=daily_filling&theme=radical)](https://github.com/feichenchina/daily_filling)
+
+> 日填充工具 / 自动化习惯追踪与数据记录
+
+[![go_binance_futures](https://github-readme-stats.vercel.app/api/pin/?username=feichenchina&repo=go_binance_futures&theme=radical)](https://github.com/feichenchina/go_binance_futures)
+
+> Go 语言实现的币安合约交易工具/SDK
+
+[![Claude-Code-Workflow](https://github-readme-stats.vercel.app/api/pin/?username=feichenchina&repo=Claude-Code-Workflow&theme=radical)](https://github.com/feichenchina/Claude-Code-Workflow)
+
+> 面向 Claude 的代码工作流与自动化示例
+
+
+---
+
+## 🧪 最近活动
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username={username}&theme=react-dark&hide_border=true" />
+</p>
+
+---
+
+## 📝 最新博文（自动同步）
+- 《工作流自动化在代码协作中的实践》 — 2025-11-28
+- 《用 Go 写一个简洁的交易接口》 — 2025-10-12
+- 《从项目到产品：开源仓库的结构化运营》 — 2025-09-02
+
+---
+
+## 🎯 里程碑
+- [x] 发布/维护 {len(repos)} 个代表性仓库
+- [x] 打造个人工作流与自动化工具链
+- [ ] 下一步：将更多实践沉淀为文档与教程
+
+---
+
+## 🧩 趣味 & 生活
+> 摄影 / 跑步 / 旅行 / 游戏（按喜好更改）
+
+---
+
+### 使用说明
+1. 在 GitHub 新建/打开 `feichenchina/feichenchina` 仓库。
+2. 将本 `README.md` 置于根目录并提交。
+3. 如不需要第三方统计服务，删除对应图片链接即可。
+
+<p align="center">
+  Made with ❤️  —  Keep coding, keep shipping.
+</p>
