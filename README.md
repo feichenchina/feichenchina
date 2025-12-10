@@ -1,8 +1,6 @@
 
 <!-- 个人 GitHub 首页 README（酷炫款 · 为 feichenchina 定制） -->
 
-![banner](https://capsule-render.vercel.app/api?type=waving&height=220&text=%F0%9F%94%A5%20Hello%20%26%20Welcome%20%F0%9F%9A%80&fontAlign=50&fontAlignY=40&color=gradient&animation=fadeIn)
-
 <p align="center">
   <a href="https://github.com/feichenchina"> 
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&duration=3000&pause=800&color=2AF7DC&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+feichenchina+%F0%9F%91%8B;Code%2C+Compute%2C+and+Creativity;Build+fast%2C+ship+reliable%2C+secure+by+design" alt="Typing SVG" />
