@@ -18,31 +18,48 @@
 ---
 
 ## 🚀 关于我
-- 🧭 专注方向：高性能计算 / 云原生 / AI 工程 / 自动化工具
-- 🛠 常用语言：Python · Go · C/C++ · Rust
+- 🧭 专注方向：高性能计算 / AI 工程 / 自动化工具
+- 🛠 常用语言：Python · JS . VUE · C/C++
 - 🧪 兴趣点：交易自动化、工作流编排、推理服务与效率提升
-- 💬 联系方式：[Email](mailto:your-email@example.com)
+- 💬 联系方式：[Email](tiejipiaoliu@163.com)
 
 ---
 
 ## 🧰 技术栈 & 工具
 <p align="left">
-  <img src="https://skillicons.dev/icons?i=python,go,cpp,rust,js,ts,react,html,css" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,vue,html,css" />
   <br/>
-  <img src="https://skillicons.dev/icons?i=pytorch,opencv,sklearn" />
+  <img src="https://skillicons.dev/icons?i=pytorch,torch_npu" />
   <br/>
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,linux,git,vscode,redis,postgres" />
+  <img src="https://skillicons.dev/icons?i=docker,linux,git,vscode,redis,postgres,mysql" />
 </p>
 
 ---
 
 ## 📊 GitHub 数据看板
+<!-- 📊 GitHub 数据看板 -->
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=feichenchina&show_icons=true&theme=radical&rank_icon=github" />
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=10&theme=radical" />
+  <!-- 总览统计 -->
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api?username=feichenchina&show_icons=true&theme=radical&rank_icon=github&include_all_commits=true&count_private=true&cache_seconds=7200"
+    alt="GitHub Stats"
+  />
+  <!-- 语言占比 -->
+  <img
+    height="170"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=feichenchina&layout=compact&langs_count=10&theme=radical&cache_seconds=7200"
+    alt="Top Languages"
+  />
   <br/>
-  <img height="170" src="https://streak-stats.demolab.com?user=feichenchina&theme=radical&date_format=%5BY.%5Dm.%5Dd" />
+  <!-- 连续贡献 -->
+  <img
+    height="170"
+    src="https://streak-stats.demolab.com?user=feichenchina&theme=radical&date_format=%5BY.%5Dm.%5Bd&hide_border=true"
+    alt="GitHub Streak"
+  />
 </p>
+
 
 ---
 
@@ -71,9 +88,7 @@
 ---
 
 ## 📝 最新博文（自动同步）
-- 《工作流自动化在代码协作中的实践》 — 2025-11-28
-- 《用 Go 写一个简洁的交易接口》 — 2025-10-12
-- 《从项目到产品：开源仓库的结构化运营》 — 2025-09-02
+
 
 ---
 
@@ -85,7 +100,7 @@
 ---
 
 ## 🧩 趣味 & 生活
-> 摄影 / 跑步 / 旅行 / 游戏（按喜好更改）
+> 跑步 / 旅行 / 游戏（按喜好更改）
 
 ---
 
