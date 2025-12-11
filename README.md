@@ -101,7 +101,7 @@
 ## 🧩 趣味 & 生活
 > 跑步 / 旅行 / 游戏（按喜好更改）
 
-```mermaid
+```
 graph TD
     %% 定义样式
     classDef host fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
