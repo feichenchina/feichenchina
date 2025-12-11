@@ -101,6 +101,85 @@
 ## 🧩 趣味 & 生活
 > 跑步 / 旅行 / 游戏（按喜好更改）
 
+```mermaid
+graph TD
+    %% 定义样式
+    classDef host fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef device fill:#f3e5f5,stroke:#4a148c,stroke-width:2px;
+    classDef memory fill:#fff9c4,stroke:#fbc02d,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef compute fill:#ffccbc,stroke:#bf360c,stroke-width:2px;
+    classDef bus fill:#e0e0e0,stroke:#616161,stroke-width:2px;
+
+    subgraph Host_Server [🖥️ CPU Host & System Memory]
+        class Host_Server host
+        UserReq(用户请求 JSON) --> |HTTP| APIGateway[API Gateway / Server]
+        APIGateway --> |解析| Tokenizer[分词器 Tokenizer]
+        Tokenizer --> |Token IDs| HostDRAM[(Host DRAM\nCPU 主存)]
+        Scheduler[调度器 Scheduler] --> |分配 Page 表| HostDRAM
+    end
+
+    HostDRAM ==> |PCIe Gen4/5 / NVLink\n传输 Token IDs & 元数据| GPU_HBM
+
+    subgraph GPU_Device [🚀 NVIDIA GPU Architecture]
+        class GPU_Device device
+        
+        subgraph Global_Memory [High Bandwidth Memory (HBM)]
+            class Global_Memory memory
+            GPU_HBM[(HBM 显存)]
+            Weights[(模型权重 Weights\nFP16/INT8)]
+            KVCache[(KV Cache Pool\nPaged Blocks)]
+            LogitsMem[(Logits Buffer)]
+        end
+
+        subgraph Compute_Unit [Streaming Multiprocessor (SM)]
+            class Compute_Unit compute
+            
+            subgraph OnChip_Memory [SRAM L1 / Shared Memory]
+                class OnChip_Memory memory
+                SRAM[(Shared Mem / L1\n极速缓存)]
+                Regs[寄存器 Registers]
+            end
+
+            TensorCores[⚡ Tensor Cores\n矩阵乘法 GEMM]
+            CUDACores[🔧 CUDA Cores\n向量加减/激活/Norm]
+        end
+
+        %% 详细数据流与计算流
+        GPU_HBM -.-> |1. Load Embeddings| SRAM
+        Weights -.-> |2. Load Weights| SRAM
+        
+        SRAM --> |3. Inputs & Weights| TensorCores
+        TensorCores --> |4. Q, K, V Projections| Regs
+        
+        Regs --> |5. RoPE 旋转| CUDACores
+        
+        Regs --> |6. Write New K,V| KVCache
+        KVCache -.-> |7. Read History K,V| SRAM
+        
+        SRAM --> |8. FlashAttention\nSoftmax(QK^T)V| TensorCores
+        
+        TensorCores --> |9. FFN / MLP\nUp & Down Projections| Regs
+        Regs --> |10. Activation SiLU/GELU| CUDACores
+        
+        Regs --> |11. Final Layer Norm| CUDACores
+        TensorCores --> |12. LM Head Projection| LogitsMem
+    end
+
+    subgraph Sampling_Phase [🎲 Sampling & Output]
+        class Sampling_Phase compute
+        LogitsMem --> |13. Temperature Div| CUDACores
+        CUDACores --> |14. Top-K / Top-P Sort| SRAM
+        SRAM --> |15. Softmax & Select| NewTokenID(新 Token ID)
+    end
+
+    NewTokenID ==> |PCIe 回传| HostDRAM
+    HostDRAM --> |Detokenize| Response(流式响应文本)
+
+    %% 连接关系
+    GPU_HBM --- Weights
+    GPU_HBM --- KVCache
+    GPU_HBM --- LogitsMem
+
 ---
 
 ### 使用说明
